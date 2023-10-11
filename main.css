@@ -1,0 +1,201 @@
+:root {
+    --color-body: hsl(35, 1%, 99%);
+    --color-body-dark: hsl(35, 38.2%, 22.4%);
+    --color-heading: hsl(35, 38.2%, 22.4%);
+    --color-text: hsl(35, 38.2%, 25.4%);
+    --color-base: hsl(35, 37.5%, 95.2%);
+    --color-brand: hsl(35, 38.2%, 72.4%);
+    --color-globe: #fff;
+}
+
+* {
+    color: var(--color-text);
+}
+
+.webgl {
+    position: absolute;
+    top: 0;
+    left: 0;
+    outline: none;
+    mix-blend-mode: exclusion;
+    z-index: -9999;
+    background-color: var(--color-globe) !important;
+}
+
+
+
+body {
+    overflow: hidden;
+    background-color: var(--color-globe);
+}
+
+
+.theme {
+    background: var(--color-body);
+}
+
+.text-theme {
+    color: var(--color-text);
+}
+
+.bg-theme-light {
+    background-color: var(--color-base);
+}
+
+.bg-theme-dark {
+    background-color: var(--color-body-dark) !important;
+}
+
+.navbar-light {
+    color: var(--color-body-dark)
+}
+
+.navbar-light .nav-item .nav-link {
+    color: var(--color-body-dark)
+}
+
+
+
+.d-nothing {
+    opacity: 0;
+}
+
+.fadingin {
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.navbar {
+    position: sticky;
+}
+
+/* -- */
+
+
+.text-brand {
+    color: var(--color-brand);
+}
+
+.bg-base {
+    background-color: var(--color-base);
+}
+
+.full-height {
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.shadow-effect {
+    transition: all 0.5s;
+}
+
+.shadow-effect:hover {
+    box-shadow: -6px 6px 0 0 var(--color-brand);
+}
+
+.iconbox {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    background-color: var(--color-brand);
+    color: var(--color-base);
+}
+
+
+
+
+/* BTN */
+.btn {
+    padding: 12px 28px;
+    font-weight: 700;
+}
+
+.btn-brand {
+    background-color: var(--color-brand);
+    border-color: var(--color-brand);
+    color: var(--color-base);
+}
+
+.btn-brand:hover,
+.btn-brand:focus {
+    background-color: var(--color-brand2);
+    color: var(--color-base);
+    border-color: var(--color-brand2);
+}
+
+.link-custom {
+    font-weight: 700;
+    position: relative;
+}
+
+.link-custom::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: var(--color-brand);
+    position: absolute;
+    left: 0;
+    top: 110%;
+    transition: all 0.4s;
+}
+
+.link-custom:hover::after {
+    width: 100%;
+}
+
+@keyframes move_wave {
+    0% {
+        transform: translateX(0) translateZ(0) scaleY(1)
+    }
+
+    50% {
+        transform: translateX(-25%) translateZ(0) scaleY(0.55)
+    }
+
+    100% {
+        transform: translateX(-50%) translateZ(0) scaleY(1)
+    }
+}
+
+
+.bg-brand {
+    background-color: var(--color-brand);
+}
+
+.progress {
+    height: 8px;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.full-height {
+    min-height: 90vh;
+}
+
+ul.nav a:hover {
+    color: #fff !important;
+}
+
+.nav-link.active {
+    background-color: var(--color-brand);
+    border-radius: 3px;
+}

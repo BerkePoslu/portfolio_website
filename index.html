@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>Berke Poslu</title>
+  <link rel="icon" href="img/swisscom.png" type="image/x-icon" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" />
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
+  <!-- MDB -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.1/mdb.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="aos.css" />
+</head>
+
+<body>
+
+  <main>
+    <div class="stars">
+
+    </div>
+    <div class="container" id="home">
+      <section>
+        <div class="vh-100 d-flex align-items-center justify-content-center">
+          <div class="text-center">
+            <h1 class="display-1  mb-4" id="title_Name"></h1>
+            <a id="title_Button" role="button" class="d-nothing btn text-theme" onclick="overflowFunction()">Are you
+              ready?</a>
+
+          </div>
+        </div>
+        <canvas class="webgl"></canvas>
+      </section>
+
+    </div>
+    <section class="theme">
+      <nav class="navbar navbar-expand-lg navbar-light bg-theme-light shadow-1 fixed-top p-2">
+        <div class="container-fluid me-3 ms-3">
+          <button class=" navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#aboutme">About Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#experience">Experience</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#skills">Skills</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" role="button" onclick="toggleDarkMode()" id="toggleDarkModeButton">
+                  <i class="fas fa-moon text-brand"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      </div>
+      <section id="aboutme" data-aos="fade-up" class="full-height px-lg-5">
+        <div class="container">
+
+          <div class="row pb-4">
+            <div class="col-lg-8">
+              <h6 class="text-brand">About Me</h6>
+              <h1>A Brief Overview Of Who I Am</h1>
+            </div>
+          </div>
+
+          <div class="row gy-4">
+
+            <div class="col-md-4" data-aos="fade-up">
+              <div class="service p-4 bg-base rounded-4 shadow-effect">
+                <div class="iconbox rounded-4">
+                  <i class="fas fa-user"></i>
+                </div>
+                <h5 class="mt-4 mb-2 ">Who am I</h5>
+                <p>My name is Berke Poslu and I am in my first year of apprenticeship as a computer
+                  scientist for
+                  application development.
+                  I am passionate about computer science and I am always motivated to program something.</p>
+                <a href="Lebenslauf.pdf" class="link-custom">Download My Resume</a>
+              </div>
+            </div>
+
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+              <div class="service p-4 bg-base rounded-4 shadow-effect">
+                <div class="iconbox rounded-4">
+                  <i class="fas fa-info"></i>
+                </div>
+                <h5 class="mt-4 mb-2 ">Personal Info</h5>
+                <ul class="list-unstyled ">
+                  <li><span class="col-sm-3">Birthdate</span> : 31/08/2006</li>
+                  <li><span>Email</span> : berke.poslu@swisscom.com</li>
+                  <li><span>Phone</span> : +41 76 357 07 00</li>
+                  <li><span>Teams</span> : Poslu Berke, GHR-OSA-NEX-24</li>
+                  <li><span>Place Of Employment</span> : Zür-Kon12</li>
+                  <li><span>School</span> : <span>Thu & Fri</span>, at BBW Winterthur, Zurich</li>
+                </ul>
+                <a href="https://intranet.swisscom.com/home/profile/taapobe6" class="link-custom">Link to my
+                  Intranet</a>
+              </div>
+            </div>
+
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
+              <div class="service p-4 bg-base rounded-4 shadow-effect">
+                <div class="iconbox rounded-4">
+                  <i class="fas fa-laptop"></i>
+                </div>
+                <h5 class="mt-4 mb-2 ">My Expertise</h5>
+                <p>I usually excel at Web-Developement (experience with HTML, CSS, Javascript,
+                  Bootstrap 5 and Flask)
+                  and
+                  can code in Python, C# and Java</p>
+                <a href="#skills" class="link-custom">Go to Skills section</a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+      <!-- expereince -->
+      <section id="experience" class="full-height px-lg-5">
+        <div class="container">
+
+          <div class="row pb-4" data-aos="fade-up">
+            <div class="col-lg-8">
+              <h6 class="text-brand">Experience</h6>
+              <h1>My Education & Swisscom Projects</h1>
+            </div>
+          </div>
+
+          <div class="row gy-5">
+            <div class="col-lg-6">
+
+              <h3 class="mb-4 " data-aos="fade-up" data-aos-delay="300">Education</h3>
+              <div class="row gy-4">
+
+                <div class="col-12" data-aos="fade-up" data-aos-delay="600">
+                  <div class="bg-base p-4 rounded-4 shadow-effect">
+                    <h4>Swisscom apprenticeship as computer scientist application development</h4>
+                    <p class="text-brand mb-2">2022 - Present</p>
+                    <p class="mb-0">I'm really grateful to be in this apprenticeship. Being in an innovation-rich
+                      environment really benefits my skills. I
+                      will spend my four years learning as much as I can.</p>
+                  </div>
+                </div>
+
+                <div class="col-12" data-aos="fade-up" data-aos-delay="600">
+                  <div class="bg-base p-4 rounded-4 shadow-effect">
+                    <h4>Lachenzelg Secondary School</h4>
+                    <p class="text-brand mb-2">2019 - 2022</p>
+                    <p class="mb-0 ">For three years I was enrolled in the Lachenzelg secondary school. I
+                      spent my time
+                      there doing my best to get good
+                      grades, and during that time I discovered my love for programming. I started programming games and
+                      took some Python
+                      courses, but my skills in Python were still very limited.</p>
+                  </div>
+                </div>
+
+                <div class="col-12" data-aos="fade-up" data-aos-delay="600">
+                  <div class="bg-base p-4 rounded-4 shadow-effect">
+                    <h4>Primary school Aemtler B & Vogtsrain</h4>
+                    <p class="text-brand mb-2">2013 - 2019</p>
+                    <p class="mb-0">The first three years of my elementary school education was spend in the Aemtler
+                      primary school, but then because I had
+                      to move to Hongg, I was enrolled in the elementary school Vogtsrain for another three years.</p>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="col-lg-6">
+
+              <h3 class="mb-4" data-aos="fade-up" data-aos-delay="300">Projects</h3>
+              <div class="row gy-4">
+
+                <div class="col-12" data-aos="fade-up" data-aos-delay="600">
+                  <div class="bg-base p-4 rounded-4 shadow-effect">
+                    <h4>Operation and monitoring of mobile radio systems</h4>
+                    <p class="text-brand mb-2">7. November 2022 - Present</p>
+                    <p class="mb-0 ">In this project I was able to learn a lot about Python and databases and how to
+                      program and use Flask applications. I
+                      developed a smaller website for Swisscom technicians to the RanTools3 Website and even had to go
+                      on
+                      the fields with
+                      a technician to ask
+                      him which features of our websites make sense for technicians and which didn't. I really enjoyed
+                      being part of this
+                      project because the people there were absolutely fantastic!</p>
+                  </div>
+                </div>
+
+                <div class="col-12" data-aos="fade-up" data-aos-delay="600">
+                  <div class="bg-base p-4 rounded-4 shadow-effect">
+                    <h4>NexBeginners@Onboarding</h4>
+                    <p class="text-brand mb-2">15. August 2022 - 7. November 2022</p>
+                    <p class="mb-0 ">My first project within Swisscom was NEXBeginners@Onboarding, a 3-month project
+                      where you learn all the swisscom tools
+                      you need. During these 3 months, I've learnt how to work in agile workspaces, what databases are
+                      and lastly programming
+                      with HTML, CSS, Javascript and Python.</p>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+      <section id="skills" class="full-height px-lg-5">
+        <div class="container">
+
+          <div class="row pb-4" data-aos="fade-up">
+            <div class="col-lg-8">
+              <h6 class="text-brand">Skills</h6>
+              <h1>My Skills and Languages</h1>
+            </div>
+          </div>
+
+          <div class="row gy-5">
+            <div class="col-lg-6">
+
+              <h3 class="mb-4" data-aos="fade-up" data-aos-delay="300">Languages</h3>
+
+              <div class="col-12" data-aos="fade-up" data-aos-delay="600">
+                <div class="bg-base p-4 rounded-4 shadow-effect">
+
+                  <h6>German</h6>
+                  <div class="progress mb-3">
+                    <div class="progress-bar bg-brand" role="progressbar" style="width: 100%" aria-valuenow="100"
+                      aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <h6>Turkish</h6>
+                  <div class="progress mb-3">
+                    <div class="progress-bar bg-brand" role="progressbar" style="width: 100%" aria-valuenow="100"
+                      aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <h6>English</h6>
+                  <div class="progress mb-3">
+                    <div class="progress-bar bg-brand" role="progressbar" style="width: 90%" aria-valuenow="90"
+                      aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <h6>French</h6>
+                  <div class="progress mb-3">
+                    <div class="progress-bar bg-brand" role="progressbar" style="width: 25%" aria-valuenow="25"
+                      aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+
+              <h3 class="mb-4" data-aos="fade-up" data-aos-delay="300">Skills</h3>
+              <div class="row gy-4">
+
+                <div class="col" data-aos="fade-up" data-aos-delay="600">
+                  <div class="bg-base p-4 rounded-4 shadow-effect">
+                    <h6>HTML &amp; CSS3</h6>
+                    <div class="progress mb-3">
+                      <div class="progress-bar bg-brand" role="progressbar" style="width: 50%" aria-valuenow="50"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <h6>SQL</h6>
+                    <div class="progress mb-3">
+                      <div class="progress-bar bg-brand" role="progressbar" style="width: 50%" aria-valuenow="50"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <h6>Python</h6>
+                    <div class="progress mb-3">
+                      <div class="progress-bar bg-brand" role="progressbar" style="width: 50%" aria-valuenow="50"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <h6>C#</h6>
+                    <div class="progress mb-3">
+                      <div id="progressBar1" class="progress-bar bg-brand" id="skills" role="progressbar"
+                        style="width: 25%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="25"></div>
+                    </div>
+                    <h6>JavaScript</h6>
+                    <div class="progress mb-3">
+                      <div class="progress-bar bg-brand" role="progressbar" style="width: 25%" aria-valuenow="25"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <h6>Java</h6>
+                    <div class="progress mb-3">
+                      <div class="progress-bar bg-brand" role="progressbar" style="width: 25%" aria-valuenow="25"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+      <section
+        class="d-flex justify-content-center justify-content-lg-between p-4 navbar fixed-bottom navbar-expand-lg bg-theme-light">
+        <!-- Left -->
+        <div class="me-5 d-none d-lg-block">
+          <span>Don't forget to check out my Intranet</span>
+        </div>
+        <!-- Left -->
+
+        <!-- Right -->
+        <div>
+          <a href="https://intranet.swisscom.com/home/profile/taapobe6" class="me-4 link-secondary">
+            <i class="fas fa-globe text-brand"></i>
+          </a>
+          <!-- Right -->
+      </section>
+  </main>
+  </section>
+  <!-- Footer -->
+  <footer class=" text-center text-lg-start text-muted theme">
+    <!-- Section: Social media -->
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section>
+      <div class="container text-center text-md-start">
+        <!-- Grid row -->
+        <div class="row p-4">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Interessted?
+            </h6>
+            <p>
+              If you are looking for a talented apprentice, or need an apprentice for a project, please do not hesitate
+              to contact me
+              by email or phone. I am usually available Monday to Saturday
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+            <p>
+              <i class="fas fa-envelope me-3"></i>
+              berke.poslu@swisscom.com
+            </p>
+            <p><i class="fas fa-phone me-3"></i> + 41 79 357 07 00</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div class="text-center p-4 bg-theme-light">
+      &#169; 2023 Copyright
+      <a class="text-brand fw-bold" href="http://berke-poslu.rf.gd">Berke Poslu</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.1/mdb.min.js"></script>
+
+  <!-- Three.js core -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <!-- Three.js setup -->
+  <script type="text/javascript">
+
+    // Texture
+    const textureLoader = new THREE.TextureLoader();
+    const normalTexture = textureLoader.load("img/world-map-vector.png");
+
+    // Canvas
+    const canvas = document.querySelector("canvas.webgl");
+
+    // Scene
+    const scene = new THREE.Scene();
+
+    // Objects
+    const geometry = new THREE.SphereBufferGeometry(0.5, 64, 64);
+
+    // Materials
+    const material = new THREE.MeshStandardMaterial();
+    material.normalMap = normalTexture;
+
+    // Mesh
+    const shape = new THREE.Mesh(geometry, material);
+    scene.add(shape);
+
+    // Lights
+    const pointLight = new THREE.PointLight(0x11223c, 2);
+    pointLight.position.x = 2;
+    pointLight.position.y = 3;
+    pointLight.position.z = 4;
+    scene.add(pointLight);
+
+    /**
+     * Sizes
+     */
+    const sizes = {
+      width: window.innerWidth,
+      height: window.innerHeight,
+    };
+
+    window.addEventListener("resize", () => {
+      // Update sizes
+      sizes.width = window.innerWidth;
+      sizes.height = window.innerHeight;
+
+      // Update camera
+      camera.aspect = sizes.width / sizes.height;
+      camera.updateProjectionMatrix();
+
+      // Update renderer
+      renderer.setSize(sizes.width, sizes.height);
+      renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+    });
+
+    /**
+     * Camera
+     */
+    // Base camera
+    const camera = new THREE.PerspectiveCamera(
+      75,
+      sizes.width / sizes.height,
+      0.1,
+      100
+    );
+    camera.position.x = 0;
+    camera.position.y = 0;
+    camera.position.z = 2;
+    scene.add(camera);
+
+    /**
+     * Renderer
+     */
+    const renderer = new THREE.WebGLRenderer({
+      canvas: canvas,
+    });
+    renderer.setSize(sizes.width, sizes.height);
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+
+    /**
+     * Animate
+     */
+
+    document.addEventListener("mousemove", onDocumentMouseMove);
+
+    let mouseX = 0;
+    let mouseY = 0;
+
+    let targetX = 0;
+    let targetY = 0;
+
+    const windowX = window.innerWidth / 2;
+    const windowY = window.innerHeight / 2;
+
+    function onDocumentMouseMove(event) {
+      mouseX = event.clientX - windowX;
+      mouseY = event.clientY - windowY;
+    }
+
+    const updateShape = (event) => {
+      shape.position.y = window.scrollY * 0.001;
+    };
+
+    window.addEventListener("scroll", updateShape)
+
+    const clock = new THREE.Clock();
+
+    const tick = () => {
+
+      targetX = mouseX * 0.001;
+      targetY = mouseY * 0.001;
+
+      const elapsedTime = clock.getElapsedTime();
+
+      // Update objects
+      shape.rotation.y = 1.5 * elapsedTime;
+
+      shape.rotation.y += 0.8 * (targetX - shape.rotation.y);
+      shape.rotation.x += 0.5 * (targetY - shape.rotation.x);
+
+      // Update Orbital Controls
+      // controls.update()
+
+      // Render
+      renderer.render(scene, camera);
+
+      // Call tick again on the next frame
+      window.requestAnimationFrame(tick);
+    };
+
+    tick();
+
+
+  </script>
+  <script type="text/javascript" src="main.js"></script>
+  <script src="aos.js"></script>
+</body>
+
+</html>
