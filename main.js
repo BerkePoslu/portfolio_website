@@ -91,31 +91,21 @@ function toggleDarkMode() {
   }
 }
 function scrollspy() {
-  // Get all the navbar links
   const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
 
-  // Listen for the scroll event
   window.addEventListener("scroll", function () {
-    // Get the current scroll position
     const scrollPos = window.scrollY;
 
-    // Loop through all the navbar links
     navLinks.forEach((link) => {
-      // Get the target section for each link
       const section = document.querySelector(link.hash);
 
-      // If the section exists
       if (section) {
-        // Check if the section is in the viewport
         const sectionTop = section.offsetTop - 70;
         const sectionBottom = sectionTop + section.offsetHeight;
 
-        // If the section is in the viewport
         if (scrollPos >= sectionTop && scrollPos <= sectionBottom) {
-          // Add the active class to the link
           link.classList.add("active");
         } else {
-          // Remove the active class from the link
           link.classList.remove("active");
         }
       }
