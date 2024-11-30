@@ -41,8 +41,7 @@ function overflowFunction() {
     }, 200);
   };
 }
-// You can also pass an optional settings object
-// below listed default settings
+
 AOS.init({
   // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
   offset: 120, // offset (in px) from the original trigger point
@@ -59,20 +58,21 @@ function toggleDarkMode() {
   let isDark = localStorage.getItem("isDark");
 
   if (isDark === null || isDark === "false") {
+    // Corrected color value and property names
     root.style.setProperty("--color-body", "#171010");
-    root.style.setProperty("--color-body-dark", "#hsl(35, 1%, 99%)");
+    root.style.setProperty("--color-body-dark", "hsl(35, 1%, 99%)");
     root.style.setProperty("--color-heading", "#fff");
     root.style.setProperty("--color-text", "hsl(35, 1%, 99%)");
     root.style.setProperty("--color-base", "#362222");
     root.style.setProperty("--color-brand", "#E5BA73");
     root.style.setProperty("--color-globe", "#141010");
     localStorage.setItem("isDark", "true");
-    document
-      .getElementById("toggleDarkModeButton")
-      .children[0].classList.add("fa-sun");
-    document
-      .getElementById("toggleDarkModeButton")
-      .children[0].classList.remove("fa-moon");
+
+    let buttonIcon = document.querySelector("#toggleDarkModeButton > i");
+    if (buttonIcon) {
+      buttonIcon.classList.add("fa-sun");
+      buttonIcon.classList.remove("fa-moon");
+    }
   } else {
     root.style.setProperty("--color-body", "hsl(35, 1%, 99%)");
     root.style.setProperty("--color-body-dark", "hsl(35, 38.2%, 22.4%)");
@@ -82,14 +82,15 @@ function toggleDarkMode() {
     root.style.setProperty("--color-brand", "hsl(35, 38.2%, 72.4%)");
     root.style.setProperty("--color-globe", "#fff");
     localStorage.setItem("isDark", "false");
-    document
-      .getElementById("toggleDarkModeButton")
-      .children[0].classList.remove("fa-sun");
-    document
-      .getElementById("toggleDarkModeButton")
-      .children[0].classList.add("fa-moon");
+
+    let buttonIcon = document.querySelector("#toggleDarkModeButton > i");
+    if (buttonIcon) {
+      buttonIcon.classList.remove("fa-sun");
+      buttonIcon.classList.add("fa-moon");
+    }
   }
 }
+
 function scrollspy() {
   const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
 
